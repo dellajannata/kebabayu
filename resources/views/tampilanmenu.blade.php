@@ -16,7 +16,7 @@
         @foreach ($menus as $m)
             <div class="col-md-4" >
                 <div class="card" >
-                    <img width="10" height="250"  src="{{ url('images') }}/{{ $m->gambar }}" class="card-img-top" alt="...">
+                    <img width="10" height="250"  src="{{ asset('storage/'. $m->gambar) }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{{ $m->nama_menu }}</h5>
                         <p class="card-text"><strong>Stok :</strong> {{ $m->stok }}<br>

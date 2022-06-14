@@ -41,7 +41,7 @@
                             <tr>
                                 <td>{{ $no++ }}</td>
                                 <td>
-                                    <img src="{{ url('images') }}/{{ $pesanan_detail->menu->gambar }}" width="100" alt="...">
+                                    <img  src="{{ asset('storage/'. $pesanan_detail->menu->gambar) }}" width="100" alt="...">
                                 </td>
                                 <td>{{ $pesanan_detail->menu->nama_menu }}</td>
                                 <td>{{ $pesanan_detail->jumlah }} </td>

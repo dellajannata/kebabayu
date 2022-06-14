@@ -66,10 +66,7 @@
                 <div class="col-md-6">
                     <div class="tm-description-box">
                         <h4 class="tm-gallery-title">Kebab Terfavorit</h4>
-                        <p class="tm-mb-45">Redistributing this template as a downloadable ZIP file on any template
-                            collection site is strictly prohibited. You will need to <a rel="nofollow"
-                                href="https://templatemo.com/contact">talk to us</a> for additional permissions about our
-                            templates. Thank you.</p>
+                        <p class="tm-mb-45">Kebab terdiri dari daging yang dipotong atau digiling, sayuran, dan berbagai pelengkap lainnya</p>
                     </div>
                 </div>
             </div>

@@ -16,7 +16,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-6">
-                                <img src="{{ url('images') }}/{{ $menu->gambar }}" class="rounded mx-auto d-block"
+                                <img  src="{{ asset('storage/'. $menu->gambar) }}" class="rounded mx-auto d-block"
                                     width="100%" alt="">
                             </div>
                             <div class="col-md-6 mt-5">

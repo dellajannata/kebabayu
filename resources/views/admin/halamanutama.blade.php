@@ -27,7 +27,7 @@
             @foreach ($menu as $m)
                 <tr>
                     <td>{{ $m->id }}</td>
-                    <td width="10" height="100"  src="{{ url('images') }}/{{ $m->gambar }}" ></td>
+                    <td><img width="150" height="100"  src="{{ asset('storage/' . $m->gambar) }}" ></td>
                     <td>{{ $m->nama_menu }}</td>
                     <td>{{ $m->harga }}</td>
                     <td>{{ $m->stok }}</td>

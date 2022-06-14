@@ -13,14 +13,14 @@
                                 @endforeach
                             </ul>
                         </div>
-                        @endif <form method="post" action="{{route('admin.update', $menu->id) }}" id="myForm">
+                        @endif <form method="post" action="{{route('admin.update', $menu->id) }}" id="myForm" enctype="multipart/form-data">
                             @csrf @method('PUT')
                             <div class="form-group"> <label for="id">Id</label> <input type="text" name="id"
                                     class="form-control" id="id" value="{{ $menu->id }}" aria-describedby="id">
                             </div>
                             <div class="form-group"> <label for="gambar">Gambar</label> <input type="file"
                                 name="gambar" class="form-control" id="gambar" value="{{ $menu->gambar }}"
-                                aria-describedby="gambar"> </div>
+                                aria-describedby="gambar"><img width="150" height="100"  src="{{ asset('images' . $menu->gambar) }}" > </div>
                             <div class="form-group"> <label for="nama_menu">Nama Menu</label> <input type="text"
                                     name="nama_menu" class="form-control" id="nama_menu" value="{{ $menu->nama_menu }}"
                                     aria-describedby="nama_menu"> </div>

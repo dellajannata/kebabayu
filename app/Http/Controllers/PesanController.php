@@ -165,11 +165,17 @@ class PesanController extends Controller
     public function store(Request $request)
     {
         //melakukan validasi data
-        $request->validate([ 'gambar' => 'required', 'nama_menu' => 'required', 'harga' => 'required',
+        $request->validate([ 'gambar' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048', 'nama_menu' => 'required', 'harga' => 'required',
         'stok' => 'required', 
         ]);
+        $gambar = $request->file('gambar')->store('images', 'public');
         //fungsi eloquent untuk menambah data 
-        Menu::create($request->all());
+        Menu::create([
+            'nama_menu' => $request->nama_menu,
+            'harga' => $request->harga,
+            'stok' => $request->stok,
+            'gambar' => $gambar
+        ]);
 
         //jika data berhasil ditambahkan, akan kembali ke halaman utama 
         return redirect()->route('admin.index')
@@ -206,14 +212,22 @@ class PesanController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $menu = Menu::findOrFail($id);
         //melakukan validasi data
-        $request->validate([ 'gambar' => 'required', 'nama_menu' => 'required', 'harga' => 'required',
+        $request->validate([ 'gambar' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048', 'nama_menu' => 'required', 'harga' => 'required',
         'stok' => 'required', 
         ]);
 
         //fungsi eloquent untuk mengupdate data inputan kita 
-        Menu::find($id)->update($request->all());
-
+        $gambar = $request->file('gambar')->store('images', 'public');
+        //fungsi eloquent untuk menambah data 
+        $menu->update([
+            'nama_menu' => $request->nama_menu,
+            'harga' => $request->harga,
+            'stok' => $request->stok,
+            'gambar' => $gambar
+        ]);
+        $menu->save();
         //jika data berhasil diupdate, akan kembali ke halaman utama 
         return redirect()->route('admin.index')
         ->with('success', 'Menu Berhasil Diupdate');

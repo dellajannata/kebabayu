@@ -50,12 +50,7 @@
                         <img src="img/kebab3.jpg" alt="Image" class="img-fluid tm-history-img" />
                         <div class="tm-history-text">
                             <h4 class="tm-history-title">History of Kebab Ayu</h4>
-                            <p class="tm-mb-p">Sed ligula risus, interdum aliquet imperdiet sit amet, auctor sit amet
-                                justo. Maecenas posuere lorem id augue interdum vehicula. Praesent sed leo eget libero
-                                ultricies congue.</p>
-                            <p>Redistributing this template as a downloadable ZIP file on any template collection site is
-                                strictly prohibited. You will need to <a href="https://templatemo.com/contact">contact
-                                    TemplateMo</a> for additional permissions about our templates. Thank you.</p>
+                            <p class="tm-mb-p">Kebab Ayu adalah pedagang kaki lima yang menawarkan makanan seperti kebab. Kebab Ayu berusaha memberikan tempat yang nyaman untuk berkumpul bagi para customernya.</p>
                         </div>
                     </div>
                 </div>
