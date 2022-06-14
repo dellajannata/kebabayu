@@ -17,7 +17,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <img  src="{{ asset('storage/'. $menu->gambar) }}" class="rounded mx-auto d-block"
-                                    width="100%" alt="">
+                                width="500" height="300" alt="">
                             </div>
                             <div class="col-md-6 mt-5">
                                 <h2>{{ $menu->nama_menu }}</h2>

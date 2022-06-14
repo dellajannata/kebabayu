@@ -20,7 +20,7 @@
                             </div>
                             <div class="form-group"> <label for="gambar">Gambar</label> <input type="file"
                                 name="gambar" class="form-control" id="gambar" value="{{ $menu->gambar }}"
-                                aria-describedby="gambar"><img width="150" height="100"  src="{{ asset('images' . $menu->gambar) }}" > </div>
+                                aria-describedby="gambar"><img width="150" height="100"  src="{{ asset('storage/' . $menu->gambar) }}" > </div>
                             <div class="form-group"> <label for="nama_menu">Nama Menu</label> <input type="text"
                                     name="nama_menu" class="form-control" id="nama_menu" value="{{ $menu->nama_menu }}"
                                     aria-describedby="nama_menu"> </div>
