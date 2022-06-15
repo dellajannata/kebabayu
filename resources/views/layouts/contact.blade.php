@@ -6,11 +6,11 @@
         <p class="col-12 text-center">Sampaikan kritik, saran, pertanyaan, bagi cerita / pengalaman Anda dengan Solaria. Masukan Anda sangat berarti untuk meningkatkan pelayanan kami.</p>
     </header>
 
-    <div class="tm-container-inner-2 tm-contact-section">
+    <div class="row tm-welcome-section">
         <div class="row">
             
-            <div class="col-md-6">
-                <div class="tm-address-box">
+            <div class="col-12 text-center">
+                <div class="placeholder-1">
                     <h4 class="tm-info-title tm-text-success">Our Address</h4>
                     <address>
                         Jl. Carik Grojogan Janti, Janti, Kec. Wates, Kabupaten Kediri, Jawa Timur 64174
