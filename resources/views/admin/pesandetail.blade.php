@@ -9,13 +9,13 @@
                         <li class="list-group-item"><b>Id: </b>{{ $pesanan->id }}</li>
                         <li class="list-group-item"><b>Tanggal: </b>{{ $pesanan->tanggal }}</li>
                         <li class="list-group-item"><b>Status: </b>{{ $pesanan->status }}</li>
-                        <li class="list-group-item"><b>Gambar: </b><img
+                        {{-- <li class="list-group-item"><b>Gambar: </b><img
                                 src="{{ url('images') }}/{{ $pesanan_details->menu->gambar }}" width="100" alt="...">
                         </li>
                         <li class="list-group-item"><b>Nama Menu: </b> {{ $pesanan_details->menu->nama_menu }}/li>
                         <li class="list-group-item"><b>Jumlah: </b>{{ $pesanan_details->jumlah }}/li>
                         <li class="list-group-item"><b>Harga: </b>Rp.
-                            {{ number_format($pesanan_details->menu->harga) }}/li>
+                            {{ number_format($pesanan_details->menu->harga) }}/li> --}}
                         <li class="list-group-item"><b>Jumlah Harga: </b>{{ $pesanan->jumlah_harga }}</li>
                     </ul>
                     @endif
