@@ -37,5 +37,34 @@
             @endforeach 
         </table>
         <br>
+        <div id="grafik"></div>
         {{$pesanan->links()}}
-    @endsection
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script type="text/javascript">
+        var pendapatan = $jumlah_harga;
+        var bulan = $bulan;
+        Highcharts.chart('grafik',{
+            title : {
+                text:'Grafik Transaksi Bulanan'
+            },
+            xAxis : {
+                categories : bulan
+            },
+            yAxis : {
+                title : {
+                text:'Nominal Transaksi Bulanan'
+                }
+            },
+            plotOptions : {
+                series : {
+                allowPointSelect: true
+                }
+            },
+            series: [
+                {
+                    name: 'Nominal Transaksi'
+                    data: jumlah_harga
+                }
+            ]
+        })
+    @endsection 
