@@ -9,8 +9,12 @@ use App\Http\Controllers\PesanController;
 use App\Http\Controllers\HistoryController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AdminController;
+<<<<<<< HEAD
 use App\Http\Controllers\EmployeeController;
 
+=======
+use App\Http\Controllers\BahanController;
+>>>>>>> 4250ebac381b4983ab7c3d99cc836f958e910788
 
 /*
 |--------------------------------------------------------------------------
@@ -53,6 +57,7 @@ Route::get('history/{id}', [HistoryController::class, 'detail']);
 Route::get('home3', [HomeController::class, 'indexadmin'])->name('admin.main')->middleware('is_admin');
 Route::resource('/admin', PesanController::class);
 Route::resource('/admin2', HistoryController::class);
+Route::resource('/admin3', BahanController::class);
 
 // Route::group(['middleware' => ['auth', 'CheckRole:admin']], function () {
 //     Route::get('/admin/homeadmin', [HomeController::class, 'indexadmin']);
