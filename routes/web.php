@@ -9,12 +9,9 @@ use App\Http\Controllers\PesanController;
 use App\Http\Controllers\HistoryController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AdminController;
-<<<<<<< HEAD
 use App\Http\Controllers\EmployeeController;
-
-=======
 use App\Http\Controllers\BahanController;
->>>>>>> 4250ebac381b4983ab7c3d99cc836f958e910788
+
 
 /*
 |--------------------------------------------------------------------------
@@ -58,6 +55,8 @@ Route::get('home3', [HomeController::class, 'indexadmin'])->name('admin.main')->
 Route::resource('/admin', PesanController::class);
 Route::resource('/admin2', HistoryController::class);
 Route::resource('/admin3', BahanController::class);
+
+Route::get('/history/cetak_pdf/{id}', [HistoryController::class, 'cetak_pdf'])->name('cetak_pdf');
 
 // Route::group(['middleware' => ['auth', 'CheckRole:admin']], function () {
 //     Route::get('/admin/homeadmin', [HomeController::class, 'indexadmin']);
