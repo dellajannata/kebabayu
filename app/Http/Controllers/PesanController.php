@@ -245,5 +245,9 @@ class PesanController extends Controller
         -> with('success', 'Menu Berhasil Dihapus');
 
     }
+    public function grafik()
+    {
+        
+    }
 }
 ?>
