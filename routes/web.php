@@ -58,8 +58,5 @@ Route::resource('/admin3', BahanController::class);
 
 Route::get('/history/cetak_pdf/{id}', [HistoryController::class, 'cetak_pdf'])->name('cetak_pdf');
 
-// Route::group(['middleware' => ['auth', 'CheckRole:admin']], function () {
-//     Route::get('/admin/homeadmin', [HomeController::class, 'indexadmin']);
 
-// });
 ?>

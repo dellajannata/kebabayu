@@ -36,7 +36,9 @@
                 </tr>
             @endforeach 
         </table>
+        {{$pesanan -> links()}}
         <br>
+        
         {{-- <div id="grafik"></div>
         {{$pesanan->links()}}
         <script src="https://code.highcharts.com/highcharts.js"></script>

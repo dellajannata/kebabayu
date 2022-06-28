@@ -45,6 +45,8 @@
                             @endforeach
                         </tbody>
                     </table>
+                    <br>
+                    <center><a class="btn btn-danger" href="{{ route('cetak_pdf', $pesanan->id) }}"> Cetak Ke PDF</a></center>
                 </div>
             </div>
         </div>

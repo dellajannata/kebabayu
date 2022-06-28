@@ -68,11 +68,10 @@
                         </tbody>
                     </table>
                     @endif
-
+                </div> <a class="btn btn-success mt-3" href="{{ route('admin2.index') }}">Kembali</a>
                 </div>
             </div>
         </div>
-        <center><a class="btn btn-danger" href="{{ route('cetak_pdf', $pesanan->id) }}"> Cetak Ke PDF</a></center>
     </div>
 </div>
 @endsection

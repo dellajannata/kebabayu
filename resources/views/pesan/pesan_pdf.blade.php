@@ -35,8 +35,8 @@
         @foreach ($pesanan_details as $pesanan_detail)
             <tr>
                 <td>{{ $no++ }}</td>
-                {{-- <td> <img src="{{ url('storage') }}/{{ $pesanan_detail->menu->gambar }}"
-                    width="100" alt="..."></td> --}}
+                <td> <img src="{{ url('storage') }}/{{ $pesanan_detail->menu->gambar }}"
+                    width="100" alt="..."></td>
                 <td align="center">{{ $pesanan_detail->menu->nama_menu }}</td>
                 <td align="center">{{ $pesanan_detail->jumlah }}</td>
                 <td align="center">{{ number_format($pesanan_detail->menu->harga) }}</td>
