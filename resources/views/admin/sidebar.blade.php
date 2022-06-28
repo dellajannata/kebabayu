@@ -41,6 +41,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="admin"><i class="fa fa-circle-o"></i>Menu</a></li>
+            <li><a href="employee"><i class="fa fa-circle-o"></i>Karyawan</a></li>
           </ul>
         </li>
 

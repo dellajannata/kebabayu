@@ -9,6 +9,7 @@ use App\Http\Controllers\PesanController;
 use App\Http\Controllers\HistoryController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\EmployeeController;
 
 
 /*
@@ -31,6 +32,8 @@ Auth::routes();
 Route::get('/', [HomeController1::class, 'home1']);
 Route::get('/about', [AboutController::class, 'about1']);
 Route::get('/contact', [ContactController::class, 'contact1']);
+
+Route::resource('/employee', EmployeeController::class);
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/home2', [HomeController::class, 'index']);
