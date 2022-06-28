@@ -45,7 +45,7 @@ class HistoryController extends Controller
         // dd($bulan);
 
         $pesanan = Pesanan::orderBy('id', 'asc')->paginate(5);
-        return view('admin.pesanindex', compact('pesanan','jumlah_harga','bulan'));
+        return view('admin.pesanindex', compact('pesanan'));
 
     }
     public function create()

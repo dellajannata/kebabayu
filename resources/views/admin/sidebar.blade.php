@@ -41,6 +41,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="admin"><i class="fa fa-circle-o"></i>Menu</a></li>
+            <li><a href="admin3"><i class="fa fa-circle-o"></i>Bahan</a></li>
           </ul>
         </li>
 
