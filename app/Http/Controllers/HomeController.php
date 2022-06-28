@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Menu;
-use App\Models\Cabang;
+use App\Models\Pesanan;
+use App\Models\PesananDetails;
+use App\Models\User;
 
 class HomeController extends Controller
 {
@@ -30,6 +32,11 @@ class HomeController extends Controller
     }
     public function indexadmin()
     {
-        return view('admin.main');
+        $count = Menu::all()->count();
+        $count1 = Pesanan::all()->count();
+        $count3 = User::all()->count();
+        $count4 = PesananDetails::all()->count();
+        // dd($count);
+        return view('admin.main', compact('count','count1','count3','count4'));
     }
 }

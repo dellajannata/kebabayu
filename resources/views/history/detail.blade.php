@@ -62,7 +62,7 @@
                                 
                             </tr>
                              <tr>
-                                <td colspan="5" align="right"><strong>Total yang harus ditransfer :</strong></td>
+                                <td colspan="5" align="right"><strong>Total yang harus dibayar :</strong></td>
                                 <td align="right"><strong>Rp. {{ number_format($pesanan->jumlah_harga-$pesanan->kode) }}</strong></td>
                                 
                             </tr>

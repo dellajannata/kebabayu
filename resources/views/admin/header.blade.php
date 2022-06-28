@@ -29,8 +29,8 @@
                                 alt="User Image">
 
                             <p>
-                                {{ Auth::user()->name }} - Web Developer
-                                <small>Member since Nov. 2012</small>
+                                {{ Auth::user()->name }} - Admin
+                                <small>Kebab Ayu</small>
                             </p>
                         </li>
                         <!-- Menu Footer-->

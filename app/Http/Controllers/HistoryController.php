@@ -8,6 +8,7 @@ use App\Models\User;
 use App\Models\PesananDetails;
 use Auth;
 use Alert;
+use DB;
 use Illuminate\Http\Request;
 
 class HistoryController extends Controller
@@ -33,7 +34,16 @@ class HistoryController extends Controller
     }
     public function index(Request $request)
     {
-        //fungsi eloquent menampilkan data menggunakan paginaon
+        // //fungsi eloquent menampilkan data menggunakan paginaon
+        // $jumlah_harga= PesananDetails::select(DB::raw("CAST(SUM(jumlah_harga)as int) as jumlah_harga"))
+        // ->groupby(DB::raw("Month(created_at)"))
+        // ->pluck('jumlah_harga');
+
+        // $bulan= PesananDetails::select(DB::raw("MONTHNAME(created_at) as bulan"))
+        // ->groupby(DB::raw("Month(created_at)"))
+        // ->pluck('bulan');
+        // dd($bulan);
+
         $pesanan = Pesanan::orderBy('id', 'asc')->paginate(5);
         return view('admin.pesanindex', compact('pesanan'));
 

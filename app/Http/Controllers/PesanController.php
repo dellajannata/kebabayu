@@ -12,6 +12,7 @@ use App\Http\Middleware\Authenticate;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth as FacadesAuth;
+use DB;
 use PharIo\Manifest\Author;
 
 
@@ -156,6 +157,7 @@ class PesanController extends Controller
         //fungsi eloquent menampilkan data menggunakan paginaon
         $menu = Menu::orderBy('id', 'asc')->paginate(5);
         return view('admin.halamanutama', compact('menu'));
+        
 
     }
     public function create()
@@ -243,6 +245,5 @@ class PesanController extends Controller
         -> with('success', 'Menu Berhasil Dihapus');
 
     }
-
 }
 ?>
