@@ -50,7 +50,8 @@
                         <img src="img/kebab3.jpg" alt="Image" class="img-fluid tm-history-img" />
                         <div class="tm-history-text">
                             <h4 class="tm-history-title">History of Kebab Ayu</h4>
-                            <p class="tm-mb-p">Kebab Ayu adalah pedagang kaki lima yang menawarkan makanan seperti kebab. Kebab Ayu berusaha memberikan tempat yang nyaman untuk berkumpul bagi para customernya.</p>
+                            <p class="tm-mb-p">Kebab Ayu merupakan salah satu kedai makanan kebab di Kota Kediri. Kedai ini menjual kebab dengan berbagai macam varian rasa selama 1 tahun dengan harga yang terjangkau.
+                                .</p>
                         </div>
                     </div>
                 </div>

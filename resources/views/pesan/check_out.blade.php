@@ -15,7 +15,8 @@
                     <div class="card-body">
                         <h3><i class="fa fa-shopping-cart"></i> Check Out</h3>
                         @if (!empty($pesanan))
-                            <p align="right">Tanggal Pesan : {{ $pesanan->tanggal }}</p>
+                        <p align="left"><Strong>Nama Pemesan : {{ Auth::user()->name }}</p>
+                            <p align="left">Tanggal          : {{ $pesanan->tanggal }}</p>
                             <table class="table table-striped">
                                 <thead>
                                     <tr>

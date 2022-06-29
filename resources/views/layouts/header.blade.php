@@ -17,7 +17,7 @@
                     </div>
                     <nav class="col-md-6 col-12 tm-nav">
                         <ul class="tm-nav-ul">
-                            <li class="tm-nav-li"><a href="home1" class="tm-nav-link active">Home</a></li>
+                            <li class="tm-nav-li"><a href=" " class="tm-nav-link active">Home</a></li>
                             <li class="tm-nav-li"><a href="about" class="tm-nav-link">About</a></li>
                             <li class="tm-nav-li"><a href="contact" class="tm-nav-link">Contact</a></li>
                              <li class="tm-nav-li"><a href="home" class="tm-nav-link ">Order</a></li>

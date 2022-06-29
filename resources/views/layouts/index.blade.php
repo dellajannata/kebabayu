@@ -14,10 +14,10 @@
                     <figure>
                         <img src="img/1.jpg" alt="Image" class="img-fluid tm-gallery-img" />
                         <figcaption>
-                            <h4 class="tm-gallery-title">Kebab 1</h4>
+                            <h4 class="tm-gallery-title">Kebab Daging</h4>
                             {{-- <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet
                                 tellus accumsan</p> --}}
-                            <p class="tm-gallery-price">Rp. 18000</p>
+                            <p class="tm-gallery-price">Rp. 24000</p>
                         </figcaption>
                     </figure>
                 </article>
@@ -25,10 +25,10 @@
                     <figure>
                         <img src="img/6.jpg" alt="Image" class="img-fluid tm-gallery-img" />
                         <figcaption>
-                            <h4 class="tm-gallery-title">Kebab 2</h4>
+                            <h4 class="tm-gallery-title">Kebab Mix</h4>
                             {{-- <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet
                                 tellus accumsan</p> --}}
-                            <p class="tm-gallery-price">Rp. 20000</p>
+                            <p class="tm-gallery-price">Rp. 26000</p>
                         </figcaption>
                     </figure>
                 </article>
@@ -36,10 +36,10 @@
                     <figure>
                         <img src="img/5.jpg" alt="Image" class="img-fluid tm-gallery-img" />
                         <figcaption>
-                            <h4 class="tm-gallery-title">Kebab 3</h4>
+                            <h4 class="tm-gallery-title">Kebab Sayur</h4>
                             {{-- <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet
                                 tellus accumsan</p> --}}
-                            <p class="tm-gallery-price">Rp. 15000</p>
+                            <p class="tm-gallery-price">Rp. 17000</p>
                         </figcaption>
                     </figure>
                 </article>
@@ -47,10 +47,10 @@
                     <figure>
                         <img src="img/4.jpg" alt="Image" class="img-fluid tm-gallery-img" />
                         <figcaption>
-                            <h4 class="tm-gallery-title">Kebab 4</h4>
+                            <h4 class="tm-gallery-title">Kebab Mozzarela</h4>
                             {{-- <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet
                                 tellus accumsan</p> --}}
-                            <p class="tm-gallery-price">Rp. 25000</p>
+                            <p class="tm-gallery-price">Rp. 21000</p>
                         </figcaption>
                     </figure>
                 </article>

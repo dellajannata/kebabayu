@@ -7,6 +7,7 @@
                 <Center>Daftar Transaksi Kebab Ayu</Center>
             </div>
             <br>
+            <p align="left"><Strong>Nama Pemesan : {{ Auth::user()->name }}</p>
     @if ($message = Session::get('success'))
         <div class="alert alert-success">
             <p>{{ $message }}</p>
@@ -37,36 +38,5 @@
             @endforeach 
         </table>
         {{$pesanan -> links()}}
-        <br>
-        
-        {{-- <div id="grafik"></div>
-        {{$pesanan->links()}}
-        <script src="https://code.highcharts.com/highcharts.js"></script>
-        <script type="text/javascript">
-        var pendapatan = $jumlah_harga;
-        var bulan = $bulan;
-        Highcharts.chart('grafik',{
-            title : {
-                text:'Grafik Transaksi Bulanan'
-            },
-            xAxis : {
-                categories : bulan
-            },
-            yAxis : {
-                title : {
-                text:'Nominal Transaksi Bulanan'
-                }
-            },
-            plotOptions : {
-                series : {
-                allowPointSelect: true
-                }
-            },
-            series: [
-                {
-                    name: 'Nominal Transaksi'
-                    data: jumlah_harga
-                }
-            ]
-        }) --}}
+        <br> 
     @endsection 

@@ -18,10 +18,9 @@
     <center>
         <h2>Detail Pesanan</h2>
     </center>
+    <hr>
     <br>
-    {{-- <b>Nama:</b> {{ $customer->nama }}<br> --}}
-
-    <br><br><br>
+    <p align="left"><Strong>Nama Pemesan : {{ Auth::user()->name }}</p>
     <table class="table table-bordered" width="700px">
         <tr>
             <th>No</th>
@@ -34,8 +33,8 @@
         <?php $no = 1; ?>
         @foreach ($pesanan_details as $pesanan_detail)
             <tr>
-                <td>{{ $no++ }}</td>
-                <td> <img src="{{ url('storage') }}/{{ $pesanan_detail->menu->gambar }}"
+                <td align="center">{{ $no++ }}</td>
+                <td align="center"> <img src="{{ url('storage') }}/{{ $pesanan_detail->menu->gambar }}"
                     width="100" alt="..."></td>
                 <td align="center">{{ $pesanan_detail->menu->nama_menu }}</td>
                 <td align="center">{{ $pesanan_detail->jumlah }}</td>

@@ -35,7 +35,7 @@
                         </li>
                         <!-- Menu Footer-->
                         <li class="user-footer">
-                            <a class="dropdown-item" href="{{ url('home1') }}" onclick="event.preventDefault();
+                            <a class="dropdown-item" href="{{ url('/beranda') }}" onclick="event.preventDefault();
                                                 document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
                             </a>
